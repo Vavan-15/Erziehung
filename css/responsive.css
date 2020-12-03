@@ -1,0 +1,150 @@
+
+
+@media (max-width: 1022px) {
+	.header__menu ul  {
+		padding-left: 0;
+	}
+
+}
+
+@media (max-width: 930px) {
+
+	.header__menu  {
+		order: 3;
+		position: fixed;
+		width: 100%;
+		/*height: 100%;*/
+		top: 44px;
+		left: 0;
+		right: 0;
+		overflow: auto;
+		padding: 0;
+		background-color: #fff;
+		font-size: 16px;
+		line-height: 2.4rem;
+		font-weight: 200;
+		transform: translateY(-100%);
+		transition: transform 0.4s ease-out;
+		opacity: 0;
+		box-shadow: -8px 12px 15px 0px rgba(0,0,0,0.3);
+		border-radius: 0 0 10px 10px;
+		z-index: 1;
+	}
+
+	.header__menu.show {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+
+	.modal {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0, 0, 0, .5);
+		z-index: 1;
+	}
+
+	.modal.show {
+		display: block;
+	}
+
+	.header__menu ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header__menu a:after {
+		content: '';
+		transform: translateY(-2px) scale(0);
+	}
+	.header__menu a:hover:after {
+		transform: translateY(-2px) scale(1);
+	}
+
+	.menu-btn {
+		order: 4;
+		display: block;
+	}
+
+	.btn-search{
+		order: 1;
+	}
+
+	.logo {
+		order: 3;
+	}
+
+	#searchform {
+		order: 2;
+		top: 0;
+		transition: none;
+		box-shadow: none;	
+	}
+
+	#searchform.btn-search-active {
+		top: 0;
+		left: 40px;
+		width: calc(100% - 100px);
+	}
+	
+	.item {
+		width: 240px;
+	}
+
+	footer {
+		padding: 10px 8% 25px 8%;
+	}
+
+	.content {
+		width: 100%;
+	}
+	.content .pony {
+		border-radius: 0;
+	}
+
+	.pony-wrap {
+
+		padding: 0 20px 0 20px;
+	}
+
+	/*Видео*/
+	.content .text iframe[src*='youtube'], .content .text iframe[src*='vimeo']
+	{
+		width: 100%;
+		height: 50vw;
+	}
+
+	.extra .item {
+		width: 250px;
+	}
+
+	.extra .pony {
+		border-radius: 200px;
+		height: 120px;
+	}
+	/*радио*/
+	#rad_block_logo {
+		display: none;
+	}
+}
+
+@media (max-width: 560px){
+
+	.item {
+		width: 280px;
+	}
+
+	.extra .item {
+		width: 280px;
+	}
+
+	.extra .pony {
+		height: 150px;
+	}
+}
