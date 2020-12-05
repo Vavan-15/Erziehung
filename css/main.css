@@ -508,6 +508,7 @@ footer {
 
 #rad_player {
 	border-radius: 25px;
+	height: 48px !important;
 }
 #rad_logo {
 	/*display: none;*/
