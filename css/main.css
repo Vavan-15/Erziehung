@@ -1,4 +1,9 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -45,7 +50,7 @@ main {
 	border-radius: 0 0 10px 10px;
 	padding: 0 7px 0 3px;
 	box-shadow: -8px 6px 15px 0px rgba(0,0,0,0.3);
-}
+	z-index: 2;
 }
 
 .header__container:after {
@@ -125,12 +130,12 @@ main {
 
 /*AOS переход меню вниз*/
 [data-aos=slide-downn] {
-    transform: translateY(-150%);
-    transition-property: transform;
+	transform: translateY(-150%);
+	transition-property: transform;
 }
 
 [data-aos=slide-downn].aos-animate {
-    transform: translateY(0);
+	transform: translateY(0);
 }
 
 /*Окно поиска*/
@@ -209,12 +214,12 @@ main {
 
 /*AOS анимация btn-search*/
 [data-aos="rotate-c"] {
-  transform: rotate(-360deg);
-  transition-property: transform;
+	transform: rotate(-360deg);
+	transition-property: transform;
 }
 
 [data-aos="rotate-c"].aos-animate {
-  transform: rotate(0deg);
+	transform: rotate(0deg);
 }
 
 .menu-btn {
@@ -506,6 +511,7 @@ footer {
 	border-radius: 25px;
 	height: 48px !important;
 }
+
 #rad_logo {
 	/*display: none;*/
 }
