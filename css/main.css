@@ -501,6 +501,11 @@ footer {
 }
 
 /*радио*/
+#radiobells_container{
+	width: 100%;
+	z-index: 1;
+}
+
 #rad_player {
 	border-radius: 25px;
 }
