@@ -34,7 +34,6 @@ main {
 	margin: 0 auto;
 }
 
-
 .header__container {
 	display: flex;
 	justify-content: space-between;
@@ -98,7 +97,6 @@ main {
 	letter-spacing: 0.5px;
 }
 
-/*Линия сиреневая под меню*/
 .header__menu a:after {
 	content: '';
 	display: block;
@@ -113,7 +111,6 @@ main {
 	transform: translateY(10px) scale(1);
 }
 
-/*Активная линия под меню*/
 .line_active a:after {
 	content: '';
 	display: block;
@@ -123,7 +120,6 @@ main {
 	transform: translateY(10px) scale(1);
 }
 
-/*AOS переход меню вниз*/
 [data-aos=slide-downn] {
 	transform: translateY(-150%);
 	transition-property: transform;
@@ -133,7 +129,6 @@ main {
 	transform: translateY(0);
 }
 
-/*Окно поиска*/
 #searchform input {
 	border: 0;
 	border-radius: 5px;
@@ -158,7 +153,6 @@ main {
 	top: 52px;
 }
 
-/*Кнопка поиск*/
 .btn-search {
 	width: 30px;
 	height: 30px;
@@ -207,7 +201,6 @@ main {
 	height: 1px;
 }
 
-/*AOS анимация btn-search*/
 [data-aos="rotate-c"] {
 	transform: rotate(-360deg);
 	transition-property: transform;
@@ -271,10 +264,6 @@ main {
 	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
-/*main*/
-
-/*Блок контентный*/
-
 .items {
 	height: 100%;
 	margin-top: 45px;
@@ -318,7 +307,6 @@ main {
 	border-radius: 0 8px 8px 0;
 }
 
-/*Уголок*/
 .sticker::after {
 	content: '';	
 	position: absolute;
@@ -369,8 +357,6 @@ main {
 	text-align: center;
 }
 
-/*footer*/
-
 footer {
 	width: 100%;
 	background-color: #fff;
@@ -390,15 +376,12 @@ footer {
 	
 }
 
-
-/*содержимое статьи*/
 .main {
 	background: #fff;
 	margin-top: 70px;
 	margin-top: 45px;
 }
 
-/*содержимое статьи*/
 .main {
 	background: #fff;
 	margin-top: 70px;
@@ -436,12 +419,10 @@ footer {
 }
 
 .content a:hover {
-	/*font-weight: bold;*/
 	text-decoration: underline;
 }
 
 .pony-wrap {
-
 	padding: 30px 20px 0 20px;
 }
 
@@ -496,7 +477,6 @@ footer {
 	padding: 30px 0 10px 0;
 }
 
-/*радио*/
 #radiobells_container{
 	width: 100%;
 	z-index: 1;
@@ -507,18 +487,11 @@ footer {
 	height: 48px !important;
 }
 
-#rad_logo {
-	/*display: none;*/
-}
-
-/*Видео*/
 .content .text iframe[src*='youtube'], .content .text iframe[src*='vimeo']
 {
 	width: 100%;
 	height: 33vw;
 }
-
-/*Дополнительно*/
 
 .extra {
 	display: flex;
